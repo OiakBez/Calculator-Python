@@ -11,7 +11,7 @@ white = "#fafafa"
 window = Tk()
 
 window.title("Calculadora")
-window.geometry("235x318")
+window.geometry("235x310")
 window.config(bg=black)
 
 #Configuração Display (Frames)
@@ -22,12 +22,45 @@ second_frame = Frame(window, width=235, height=268)
 second_frame.grid(row=1, column=0)
 
 #Configuração de botões
-clear_button = Button(second_frame, text = "C", width=17, height=2)
+clear_button = Button(second_frame, text = "C", width=14, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 clear_button.place(x=0, y=0)
-
-porcentag_button = Button(second_frame, text = "%", width=6, height=2)
-porcentag_button.place(x=125, y=0)
-
-divisao_button = Button(second_frame, text = "/", width=7, height=2, bg=orange, fg=white)
+porcentag_button = Button(second_frame, text = "%", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+porcentag_button.place(x=115, y=0)
+divisao_button = Button(second_frame, text = "/", width=7, height=2, font=('Ivy 13 bold'), bg=orange, fg=white, relief=RAISED, overrelief=RIDGE)
 divisao_button.place(x=175, y=0)
+
+seven_button = Button(second_frame, text = "9", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+seven_button.place(x=0, y=52)
+eight_button = Button(second_frame, text = "8", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+eight_button.place(x=57.5, y=52)
+nine_button = Button(second_frame, text = "7", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+nine_button.place(x=115, y=52)
+multp_button = Button(second_frame, text = "X", width=7, height=2, font=('Ivy 13 bold'), bg=orange, fg=white, relief=RAISED, overrelief=RIDGE)
+multp_button.place(x=175, y=52)
+
+seven_button = Button(second_frame, text = "6", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+seven_button.place(x=0, y=104)
+eight_button = Button(second_frame, text = "5", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+eight_button.place(x=57.5, y=104)
+nine_button = Button(second_frame, text = "4", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+nine_button.place(x=115, y=104)
+multp_button = Button(second_frame, text = "+", width=7, height=2, font=('Ivy 13 bold'), bg=orange, fg=white, relief=RAISED, overrelief=RIDGE)
+multp_button.place(x=175, y=104)
+
+seven_button = Button(second_frame, text = "3", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+seven_button.place(x=0, y=156)
+eight_button = Button(second_frame, text = "2", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+eight_button.place(x=57.5, y=156)
+nine_button = Button(second_frame, text = "1", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+nine_button.place(x=115, y=156)
+multp_button = Button(second_frame, text = "-", width=7, height=2, font=('Ivy 13 bold'), bg=orange, fg=white, relief=RAISED, overrelief=RIDGE)
+multp_button.place(x=175, y=156)
+
+twozero_button = Button(second_frame, text = "00", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+twozero_button.place(x=0, y=208)
+zero_button = Button(second_frame, text = "0", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+zero_button.place(x=57.5, y=208)
+equal_button = Button(second_frame, text = "=", width=12, height=2, font=('Ivy 13 bold'), bg=orange, fg=white, relief=RAISED, overrelief=RIDGE)
+equal_button.place(x=120, y=208)
+#mainloop
 window.mainloop()
