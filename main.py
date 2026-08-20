@@ -21,6 +21,10 @@ frame_window.grid(row=0, column=0)
 second_frame = Frame(window, width=235, height=268)
 second_frame.grid(row=1, column=0)
 
+#Label de resultado
+label_window = Label(frame_window, text="123456789", width=16, height=2, padx=7, relief=FLAT, anchor="e", justify=RIGHT, font=('Ivy 18'), bg=grey, fg=white)
+label_window.place(x=0,y=0)
+
 #Configuração de botões
 clear_button = Button(second_frame, text = "C", width=14, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 clear_button.place(x=0, y=0)
@@ -35,7 +39,7 @@ eight_button = Button(second_frame, text = "8", width=6, height=2, font=('Ivy 13
 eight_button.place(x=57.5, y=52)
 nine_button = Button(second_frame, text = "7", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 nine_button.place(x=115, y=52)
-multp_button = Button(second_frame, text = "X", width=7, height=2, font=('Ivy 13 bold'), bg=orange, fg=white, relief=RAISED, overrelief=RIDGE)
+multp_button = Button(second_frame, text = "x", width=7, height=2, font=('Ivy 13 bold'), bg=orange, fg=white, relief=RAISED, overrelief=RIDGE)
 multp_button.place(x=175, y=52)
 
 seven_button = Button(second_frame, text = "6", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
@@ -56,7 +60,7 @@ nine_button.place(x=115, y=156)
 multp_button = Button(second_frame, text = "-", width=7, height=2, font=('Ivy 13 bold'), bg=orange, fg=white, relief=RAISED, overrelief=RIDGE)
 multp_button.place(x=175, y=156)
 
-twozero_button = Button(second_frame, text = "00", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+twozero_button = Button(second_frame, text = ".", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 twozero_button.place(x=0, y=208)
 zero_button = Button(second_frame, text = "0", width=6, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 zero_button.place(x=57.5, y=208)
