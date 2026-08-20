@@ -29,8 +29,6 @@ def values_in_window(event):
     global global_values
 
     global_values = global_values+str(event)
-    #result = eval(global_values)
-
     text_variable.set(global_values)
 
 #Label de resultado
